@@ -1,1 +1,1 @@
-# tuite-react-web-app
+# tuiter-react-web-app
