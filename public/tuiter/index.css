@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial";
+  background-color: black;
+  color: white;
+  padding-left: 16px;
+  border-color: rgb(47, 51, 54);
+}
+
+.wd-post-div {
+  border-color: lightgray;
+  padding-bottom: 12px;
+  border-bottom: solid 1px;
+  margin-left: 16px;
+  margin-top: 12px;
+}
+
+.wd-post-title {
+  font-size: 20px;
+}
+
+.wd-post-user {
+  color: lightgray;
+  font-size: 13px;
+}
+
+.wd-avatar-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  float: left;
+}
+
+.wd-user-name {
+  font-size: 15px;
+  font: bold;
+  padding-left: 12px;
+}
+
+.wd-user-handle {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.wd-content {
+  font-size: 15px;
+  width: 506px;
+  text-align: left;
+  padding-right: 16px;
+  padding-left: 60px;
+  padding-bottom: 12px;
+}
+
+.wd-content-image {
+  width: 504px;
+  height: 264px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom: solid 1px lightgray;
+}
+
+.wd-content-div {
+  border-radius: 12px;
+  width: 504px;
+  border-color: lightgray;
+  border: solid 1px;
+  margin-left: 60px;
+}
+
+.wd-content-text {
+  color: lightgray;
+  font-size: 15px;
+  padding: 12px;
+}
+
+.wd-icons {
+  padding-top: 12px;
+  padding-left: 60px;
+}
+
+.wd-icon {
+  text-decoration: none;
+}
+
+.wd-pair {
+  color: lightgray;
+  padding-right: 12px;
+}
