@@ -1,7 +1,7 @@
 const PostSummaryItem = (who) => {
   return `
-  <div class="card-body row">
-    <div class="col-9">
+    <div class="card-body row wd-postsummary">
+    <div class="col-lg-10 col-xl-9"">
         <h6 style="color: lightgray">${who.topic}</h6>
         <h5 class="card-title" style="font-weight: bold">
         ${who.userName}
@@ -13,11 +13,10 @@ const PostSummaryItem = (who) => {
         </p>
         <label style="color: lightgray; font-weight: bold">${who.tweets}</label>
     </div>
-
-    <div class="col-lg-2 col-xl-3">
-        <img src="${who.image}" class="img-fluid d-block mt-5" style="border-radius: 10px;" alt="..." />
+    <div class="col-lg-3 col-xl-3 ">
+        <img src="${who.image}" class="img-fluid d-block m-2" style="border-radius: 10px;" alt="..." />
     </div>
-  </div>
+    </div>
     `;
 };
 export default PostSummaryItem;

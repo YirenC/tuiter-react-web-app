@@ -1,5 +1,5 @@
 export default [
-  { avatarIcon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png",
+  { avatarIcon: "https://cdn.iconscout.com/icon/free/png-256/java-23-225999.png",
     userName: "Java",
     handle: "java" ,
   },

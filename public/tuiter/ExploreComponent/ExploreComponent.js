@@ -38,10 +38,10 @@ const ExploreComponent = () => {
       <div>
           <img src="https://images2.alphacoders.com/112/thumb-1920-1128971.jpg" class="card-img-top" alt="..." />
           <span class="wd-img-title">SpaceX's Starship</span>
+            ${PostSummaryList()}
       </div>
            <!-- image with overlaid text -->
-           ${PostSummaryList()}
-           </div>
+  </div>
     `;
 };
 export default ExploreComponent;
