@@ -17,7 +17,7 @@ body {
 }
 
 .wd-left-list-item {
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   color: lightgray;
 }
 
@@ -82,4 +82,51 @@ body {
 .wd-active {
   color: white;
   font-weight: bold;
+}
+
+.wd-time {
+  color: lightgray;
+  font-weight: 500;
+}
+
+.wd-homescreen {
+  background-color: black;
+}
+
+.wd-post-title {
+  color: white;
+  font-weight: 400;
+  font-size: small;
+}
+
+.wd-post-big-title {
+  color: white;
+  font-weight: 400;
+}
+
+.wd-post-img {
+  border-bottom: solid 2px rgb(87, 87, 87);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.wd-post-content {
+  color: white;
+  font-weight: 300;
+}
+
+.wd-post-card {
+  border-radius: 20px;
+  border: solid 2px rgb(87, 87, 87);
+}
+
+.wd-post-icon {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: small;
+}
+
+.wd-home-icon {
+
 }
