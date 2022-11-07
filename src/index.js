@@ -13,15 +13,6 @@ root.render(
   </React.StrictMode>
 );
 
-function Labs() {
-    return(
-        <div>
-            <h1>Assignment 6</h1>
-        </div>
-    );
-}
-export default Labs;
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
