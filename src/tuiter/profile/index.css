@@ -50,8 +50,14 @@
     position: relative;
 }
 
+.wd-edit-profile-content {
+    top: 500px;
+    position: relative;
+}
+
 .wd-profile-btn {
     top: 410px;
     right: 0;
     position: relative;
 }
+

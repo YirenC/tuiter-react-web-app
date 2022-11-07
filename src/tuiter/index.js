@@ -5,6 +5,7 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
+import EditProfileComponent from "./edit-profile";
 import whoReducer
     from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
@@ -27,6 +28,7 @@ function Tuiter() {
                  style={{"position": "relative"}}>
                 <Routes>
                     <Route path="home"    element={<HomeComponent/>}/>
+                    <Route path="edit-profile"    element={<EditProfileComponent/>}/>
                     <Route path="explore" element={<ExploreComponent/>}/>
                     <Route path="profile" element={<ProfileComponent/>}/>
                 </Routes>

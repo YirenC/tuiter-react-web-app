@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css"
 import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 
 const ProfileComponent = () => {
@@ -11,7 +12,11 @@ const ProfileComponent = () => {
                     <div className="row">
                         <div className="col-4"><img className="wd-profile-pic rounded-circle float-right" src={profile.profilePicture} alt=""/></div>
                         <div className="col-5"></div>
-                        <div className="col-3"><button className="btn btn-primary rounded-pill wd-profile-btn">Edit profile</button></div>
+                        <div className="col-3">
+                            <Link to="/tuiter/edit-profile" className="btn btn-primary rounded-pill wd-profile-btn">
+                                Edit profile
+                            </Link>
+                        </div>
                     </div>
                     <div className="wd-profile-content">
                         <div>
