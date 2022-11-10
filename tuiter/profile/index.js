@@ -52,14 +52,6 @@ const ProfileComponent = () => {
               {profile.dateJoined}
             </label>
           </span>
-          <span className="row m-2">
-            <span className="col-6">
-              <label className="wd-profile-count">{profile.followingCount}</label> Following
-            </span>
-            <span className="col-6">
-              <label className="wd-profile-count">{profile.followersCount}</label> Followers
-            </span>
-          </span>
         </div>
       </div>
     </>
