@@ -35,22 +35,22 @@ const TuitItem = (
                     <div><span className="fw-bolder">{tuit.userName}</span> {tuit.handle} · {tuit.time}</div>
                     <div className="">{tuit.tuit}</div>
                     <span className="row mt-2 ms-2">
-                      <a className="wd-post-icon col-3" href="">
+                      <div className="wd-post-icon col-3">
                         <i class=" fa-regular fa-message fa-1x"></i> {tuit.replies}
-                      </a>
-                        <a class=" wd-post-icon col-3" href="">
+                      </div>
+                        <div class=" wd-post-icon col-3" >
                         <i className="fa-regular fa-share-from-square fa-1x"></i> {tuit.retuits}
-                        </a>
-                      <a className="wd-post-icon col-3 " href="">
+                        </div>
+                      <div className="wd-post-icon col-3 " >
                           <i onClick={() => dispatch(updateTuitThunk({
                                                                          ...tuit,
                                                                          likes: tuit.liked === false?tuit.likes + 1: tuit.likes - 1,
                                                                          liked: !tuit.liked,
                                                                      }))} className= {`bi ${tuit.liked === true?'bi-heart-fill':'bi-heart'} me-2 ${tuit.liked === true?'text-danger':''}`}></i>{tuit.likes}
-                      </a>
-                      <a class=" wd-post-icon col-3" href="">
+                      </div>
+                      <div class=" wd-post-icon col-3" >
                         <i className="fa fa-arrow-up-from-bracket fa-1x"></i>
-                      </a>
+                      </div>
                     </span>
                 </div>
                 <div>
