@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {updateTuitThunk, deleteTuitThunk} from "../../services/tuits-thunks";
+
 
 const TuitItem = (
     {
@@ -22,7 +23,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item">
@@ -41,7 +42,11 @@ const TuitItem = (
                         <i className="fa-regular fa-share-from-square fa-1x"></i> {tuit.retuits}
                         </a>
                       <a className="wd-post-icon col-3 " href="">
-                        <i className={`${tuit.liked === true?'fa':'fa-regular'} fa-heart fa-1x ${tuit.liked === true?'liked':''}`}></i> {tuit.likes}
+                          <i onClick={() => dispatch(updateTuitThunk({
+                                                                         ...tuit,
+                                                                         likes: tuit.liked === false?tuit.likes + 1: tuit.likes - 1,
+                                                                         liked: !tuit.liked,
+                                                                     }))} className= {`bi ${tuit.liked === true?'bi-heart-fill':'bi-heart'} me-2 ${tuit.liked === true?'text-danger':''}`}></i>{tuit.likes}
                       </a>
                       <a class=" wd-post-icon col-3" href="">
                         <i className="fa fa-arrow-up-from-bracket fa-1x"></i>

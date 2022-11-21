@@ -15,7 +15,7 @@ import { configureStore }
 import {Provider} from "react-redux";
 import profileReducer from "./reducers/profile-reducer";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, posts: postsReducer, profile: profileReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer, posts: postsReducer, profile: profileReducer}});
 
 function Tuiter() {
     return (
