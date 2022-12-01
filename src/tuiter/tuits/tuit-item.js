@@ -6,7 +6,7 @@ import {updateTuitThunk, deleteTuitThunk} from "../../services/tuits-thunks";
 const TuitItem = (
     {
         tuit = {
-            "_id": 234,
+            "_id": "234",
             "topic": "Space",
             "userName": "SpaceX",
             "time": "2h",

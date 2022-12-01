@@ -11,6 +11,7 @@ const WhatsHappening = () => {
         const newTuit = {
             tuit: whatsHappening
         }
+        console.log((newTuit))
         dispatch(createTuitThunk(newTuit));
     }
     return (
